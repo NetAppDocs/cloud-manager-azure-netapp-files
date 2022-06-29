@@ -573,7 +573,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-31 18:45:23 +0000">05/31/2022</time>
+    <time datetime="2022-06-29 15:30:36 +0000">06/29/2022</time>
     
   
 
@@ -720,11 +720,17 @@
 <p>Click <strong>JSON</strong> and click <strong>Edit</strong> which appears at the top right of the JSON format.</p>
 </li>
 <li>
-<p>Add the following permission under <em>actions</em>:</p>
+<p>Add the following permissions under <em>actions</em>:</p>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-json" data-lang="json">"actions": [
-    "Microsoft.NetApp/*"
+    "Microsoft.NetApp/*",
+    "Microsoft.Resources/resources/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/write",
+    "Microsoft.Network/virtualNetworks/read",
+    "Microsoft.Insights/Metrics/Read"
     ],</code></pre>
 </div>
 </div>
